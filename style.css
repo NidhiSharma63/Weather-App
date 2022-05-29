@@ -1,7 +1,28 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
 }
 body{
     background-color: rgb(63, 172, 235);
+}
+.main-wrapper{
+    max-width: 1300px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width:40%;
+    height: 40%;
+    border-radius: .7rem;
+    /* border: 1px solid; */
+    /* box-shadow: .1rem .1rem 2rem .1rem rgba(0, 0, 0, 0.247); */
+    box-shadow: .1rem .1rem 2rem .1rem rgb(21, 145, 194);
+    /* margin: auto; */
 }
