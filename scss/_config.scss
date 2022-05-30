@@ -16,3 +16,12 @@ body{
     background-color:rgb(128, 225, 238);
     font-family: 'Raleway', sans-serif;
 }
+
+@mixin flex-js{
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin box-shadow($color){
+    box-shadow: 0.1rem 0.1rem 1.1rem 0.1rem $color;
+}
