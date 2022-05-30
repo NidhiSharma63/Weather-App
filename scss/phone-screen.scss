@@ -1,5 +1,4 @@
 .phone-screen{
-    // background-color: var(--primary-color);
     background-color: var(--primary-color);
     height: 100%;
     width: 100%;
@@ -11,7 +10,6 @@
     overflow: hidden;
     box-shadow: 0.1rem 0.1rem 1.1rem 0.1rem var(--white-color);
     text-shadow: 0.1rem 0rem var(--white-color);
-    // box-shadow: 0.1rem 0.1rem 1.1rem 0.1rem rgb(21, 115, 170);
 }
 
 .phone-screen .col1{
@@ -26,7 +24,6 @@
     margin: 0rem 1rem;
 }
 .col2{
-    // border: 1px solid;
     font-size: 2rem;
     display: flex;
     justify-content: space-between;
@@ -47,6 +44,13 @@
     padding: 0rem 1rem;
     border-radius: 0.5rem;
     box-shadow: 0.1rem 0.1rem 1.1rem 0.1rem var(--primary-color);
+    position: relative;
+    z-index: 2;
+    letter-spacing: .025rem;
+    color: rgb(56, 53, 53);
+}
+.input-search input:focus{
+    outline: none;
 }
 .input-search .search-icon{
     padding: 0.5rem;
@@ -56,6 +60,7 @@
     margin-left: 0.3rem;
     border-radius: 0.5rem;
     box-shadow: 0.1rem 0.1rem 1.1rem 0.1rem var(--primary-color);
+    cursor: pointer;
 }
 .phone-screen .col3{
     margin-top: -6rem;

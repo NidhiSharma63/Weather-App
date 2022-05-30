@@ -8,8 +8,7 @@
 
 :root {
   --white-color:rgb(255, 255, 255);
-  --primary-color:rgb(63, 172, 235)
-;
+  --primary-color:rgb(63, 172, 235);
 }
 
 html {
@@ -17,7 +16,7 @@ html {
 }
 
 body {
-  background-color: var(--primary-color);
+  background-color: #80c6ee;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -80,8 +79,8 @@ body {
 
 .container {
   background-color: white;
-  width: 27%;
-  height: 70%;
+  width: 30rem;
+  height: 55rem;
   border-radius: .8rem;
   position: relative;
   padding: 1.2rem .8rem;
