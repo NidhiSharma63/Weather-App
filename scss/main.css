@@ -132,6 +132,8 @@ body {
           justify-content: center;
   -webkit-transform: translateX(-27rem);
           transform: translateX(-27rem);
+  position: relative;
+  z-index: 3;
 }
 
 .input-search input {
@@ -143,7 +145,7 @@ body {
   -webkit-box-shadow: 0.1rem 0.1rem 1.1rem 0.1rem var(--primary-color);
           box-shadow: 0.1rem 0.1rem 1.1rem 0.1rem var(--primary-color);
   position: relative;
-  z-index: 2;
+  z-index: 5;
   letter-spacing: .025rem;
   color: #383535;
   font-size: 1.4rem;
@@ -169,9 +171,13 @@ body {
 
 .phone-screen .col3 {
   margin-top: -6rem;
+  position: relative;
+  z-index: 1;
 }
 
 .phone-screen .col3 img {
+  position: relative;
+  z-index: 1;
   width: 100%;
   -webkit-animation: cloud-anim 1s infinite alternate ease-in-out;
           animation: cloud-anim 1s infinite alternate ease-in-out;
