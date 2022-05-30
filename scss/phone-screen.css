@@ -130,12 +130,6 @@
   margin-bottom: 2rem;
 }
 
-.col4 .temperature .unit {
-  position: relative;
-  top: 0.5rem;
-  left: 0.5rem;
-}
-
 .col4 .temperature p:first-child {
   font-size: 3rem;
 }
@@ -145,12 +139,6 @@
   display: -ms-flexbox;
   display: flex;
   margin-top: 1rem;
-}
-
-.deg {
-  font-size: 1.4rem;
-  position: absolute;
-  right: 2rem;
 }
 
 .col4 .temp-info .humidity,
