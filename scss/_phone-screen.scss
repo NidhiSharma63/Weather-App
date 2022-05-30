@@ -20,6 +20,7 @@
     padding: 0rem 1rem;
     color: var(--white-color);
     font-size: 1.5rem;
+    transform: translateY(-2rem);
 }
 .phone-screen .col1 .wifi{
     margin: 0rem 1rem;
@@ -30,6 +31,7 @@
     justify-content: space-between;
     padding: 0rem 1rem;
     color: var(--white-color);
+    opacity: 0;
 }
 .col2 .day{
     font-size: 3rem;
@@ -38,8 +40,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: translateX(-27rem);
 }
 .input-search input{
+    width: 18rem;
     height: 3.3rem;
     border: none;
     padding: 0rem 1rem;
@@ -87,6 +91,7 @@
     color: var(--white-color);
     align-items: baseline;
     margin-bottom: 2rem;
+    opacity: 0;
 }
 
 .col4 .temperature p:first-child{
@@ -96,10 +101,6 @@
     display: flex;
     margin-top: 1rem;
     transform: translateX(-17rem);
-}
-.temp-info-translate{
-    transform: translateX(0rem) !important;
-    animation: temp-info-anim 1s ease-out;
 }
 .col4 .searchCity{
     font-size: 3rem;
@@ -118,6 +119,19 @@
     box-shadow: 0.1rem 0.1rem 1.1rem 0.1rem var(--primary-color);
 }
 
+// animations class
+.translateX{
+    transform: translateX(0rem) !important;
+    animation: translate-x-anim 1s ease-out;
+}
+.col1-translate{
+    transform: translateY(0rem) !important;
+    animation: col1-anim 1s ease-out;
+}
+.opacity-full{
+    transition:1s;
+    opacity: 1!important;
+}
 // animations
 @keyframes cloud-anim{
     from{
@@ -127,12 +141,31 @@
         transform: translateY(20px);
     }
 }
-
-@keyframes temp-info-anim {
+@keyframes col1-anim{
     from{
-        transform: translateX(-17rem);
+        transform: translateY(-2rem);
+    }
+    to{
+        transform: translateY(0rem);
+    }
+}
+@keyframes translate-x-anim {
+    from{
+        transform: translateX(-27rem);
     }
     to{
         transform: translateX(0rem); 
+    }
+}
+
+// mediaquery
+@media screen and (max-width:1920px) {
+    html{
+        font-size: 82.5%;
+    }
+}
+@media screen and (max-width:1400px) {
+    html{
+        font-size: 62.5%;
     }
 }

@@ -6,8 +6,10 @@ const searchBtn = document.querySelector('.search-icon');
 const input = document.getElementById('input');
 const DayAndDate = document.querySelector('.col2');
 const time = document.querySelector('.time');
-const tempInfo = document.querySelector('.temp-info')
-
+const tempInfo = document.querySelector('.temp-info');
+const col1 = document.querySelector(".col1");
+const inputSearch = document.querySelector('.input-search')
+const temperature = document.querySelector('.temperature')
 // api key
 const api_key = {
 	'apiKey':'5ae69beae2bd9f4df5e460c7e94fca3f',
@@ -99,8 +101,12 @@ const gettingCurrentDateAndTime = () =>{
 	time.innerHTML=`${date.getUTCHours()}:${date.getMinutes()}`;
 	requestAnimationFrame(gettingCurrentDateAndTime);
 }
-gettingCurrentDateAndTime();
+// gettingCurrentDateAndTime();
 
 window.onload = () =>{
-	tempInfo.classList.add('temp-info-translate')
+	tempInfo.classList.add('translateX');
+	col1.classList.add('col1-translate');
+	inputSearch.classList.add('translateX');
+	DayAndDate.classList.add('opacity-full');
+	temperature.classList.add('opacity-full');
 }
