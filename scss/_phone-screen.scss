@@ -38,6 +38,8 @@
     align-items: center;
     justify-content: center;
     transform: translateX(-27rem);
+    position: relative;
+    z-index: 3;
 }
 .input-search input{
     width: 23rem;
@@ -47,7 +49,7 @@
     border-radius: 0.5rem;
     @include box-shadow(var(--primary-color));
     position: relative;
-    z-index: 2;
+    z-index: 5;
     letter-spacing: .025rem;
     color: rgb(56, 53, 53);
     font-size: 1.4rem;
@@ -69,8 +71,12 @@
 }
 .phone-screen .col3{
     margin-top: -6rem;
+    position: relative;
+    z-index: 1;
 }
 .phone-screen .col3 img{
+    position: relative;
+    z-index: 1;
     width: 100%;
     animation: cloud-anim 1s infinite alternate ease-in-out;
 }

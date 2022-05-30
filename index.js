@@ -101,7 +101,7 @@ const gettingCurrentDateAndTime = () =>{
 	time.innerHTML=`${date.getUTCHours()}:${date.getMinutes()}`;
 	requestAnimationFrame(gettingCurrentDateAndTime);
 }
-gettingCurrentDateAndTime();
+// gettingCurrentDateAndTime();
 
 window.onload = () =>{
 	tempInfo.classList.add('translateX');
