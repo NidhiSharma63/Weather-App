@@ -6,6 +6,7 @@ const searchBtn = document.querySelector('.search-icon');
 const input = document.getElementById('input');
 const DayAndDate = document.querySelector('.col2');
 const time = document.querySelector('.time');
+const tempInfo = document.querySelector('.temp-info')
 
 // api key
 const api_key = {
@@ -99,3 +100,7 @@ const gettingCurrentDateAndTime = () =>{
 	requestAnimationFrame(gettingCurrentDateAndTime);
 }
 gettingCurrentDateAndTime();
+
+window.onload = () =>{
+	tempInfo.classList.add('temp-info-translate')
+}

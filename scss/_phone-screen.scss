@@ -1,3 +1,4 @@
+
 .phone-screen{
     background-color: var(--primary-color);
     height: 100%;
@@ -69,12 +70,14 @@
 }
 .phone-screen .col3 img{
     width: 100%;
+    animation: cloud-anim 1s infinite alternate ease-in-out;
 }
 .col4{
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
     position: relative;
+    overflow: hidden;
 }
 .col4 .temperature{
     display: flex;
@@ -92,6 +95,11 @@
 .col4 .temp-info{
     display: flex;
     margin-top: 1rem;
+    transform: translateX(-17rem);
+}
+.temp-info-translate{
+    transform: translateX(0rem) !important;
+    animation: temp-info-anim 1s ease-out;
 }
 .col4 .searchCity{
     font-size: 3rem;
@@ -108,4 +116,23 @@
     font-weight: 700;
     margin-left: .5rem;
     box-shadow: 0.1rem 0.1rem 1.1rem 0.1rem var(--primary-color);
+}
+
+// animations
+@keyframes cloud-anim{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(20px);
+    }
+}
+
+@keyframes temp-info-anim {
+    from{
+        transform: translateX(-17rem);
+    }
+    to{
+        transform: translateX(0rem); 
+    }
 }
