@@ -1,6 +1,6 @@
 .phone-screen{
-    // background-color: rgb(63, 172, 235);
-    background-color: rgb(63, 172, 235);
+    // background-color: var(--primary-color);
+    background-color: var(--primary-color);
     height: 100%;
     width: 100%;
     border-radius: .8rem;
@@ -9,7 +9,8 @@
     justify-content: space-between;
     flex-direction: column;
     overflow: hidden;
-    box-shadow: 0.1rem 0.1rem 1.1rem 0.1rem white;
+    box-shadow: 0.1rem 0.1rem 1.1rem 0.1rem var(--white-color);
+    text-shadow: 0.1rem 0rem var(--white-color);
     // box-shadow: 0.1rem 0.1rem 1.1rem 0.1rem rgb(21, 115, 170);
 }
 
@@ -18,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0rem 1rem;
-    color: white;
+    color: var(--white-color);
     font-size: 1.5rem;
 }
 .phone-screen .col1 .wifi{
@@ -30,7 +31,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0rem 1rem;
-    color: white;
+    color: var(--white-color);
 }
 .col2 .day{
     font-size: 3rem;
@@ -43,17 +44,18 @@
 .input-search input{
     height: 3.3rem;
     border: none;
-    /* border-bottom: 1px solid; */
     padding: 0rem 1rem;
     border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.1rem 1.1rem 0.1rem var(--primary-color);
 }
 .input-search .search-icon{
     padding: 0.5rem;
-    background: white;
-    color: rgb(19, 139, 209);
+    background: var(--white-color);
+    color: var(--primary-color);
     font-size: 2rem;
     margin-left: 0.3rem;
     border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.1rem 1.1rem 0.1rem var(--primary-color);
 }
 .phone-screen .col3{
     margin-top: -6rem;
@@ -72,7 +74,7 @@
     justify-content: space-between;
     padding: 0rem 1rem;
     font-size: 2.2rem;
-    color: white;
+    color: var(--white-color);
     align-items: baseline;
     margin-bottom: 2rem;
 }
@@ -98,9 +100,10 @@
 .col4 .temp-info .wind{
     padding: 1rem;
     border-radius: 0.2rem;
-    background: white;
-    color: rgb(19, 139, 209);
+    background: var(--white-color);
+    color: var(--primary-color);
     font-size: 1.5rem;
     font-weight: 700;
     margin-left: .5rem;
+    box-shadow: 0.1rem 0.1rem 1.1rem 0.1rem var(--primary-color);
 }

@@ -8,6 +8,8 @@
 
 :root {
   --white-color:rgb(255, 255, 255);
+  --primary-color:rgb(63, 172, 235)
+;
 }
 
 html {
@@ -15,7 +17,7 @@ html {
 }
 
 body {
-  background-color: #3faceb;
+  background-color: var(--primary-color);
   font-family: 'Raleway', sans-serif;
 }
 

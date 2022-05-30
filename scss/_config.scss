@@ -7,11 +7,12 @@
 }
 :root{
     --white-color:rgb(255, 255, 255);
+    --primary-color:rgb(63, 172, 235)
 }
 html{
     font-size: 62.5%;
 }
 body{
-    background-color: rgb(63, 172, 235);
+    background-color: var(--primary-color);
     font-family: 'Raleway', sans-serif;
 }
