@@ -53,6 +53,8 @@
     outline: none;
 }
 .input-search .search-icon{
+    position: relative;
+    z-index: 2;
     padding: 0.5rem;
     background: var(--white-color);
     color: var(--primary-color);
@@ -91,7 +93,11 @@
     display: flex;
     margin-top: 1rem;
 }
-
+.col4 .searchCity{
+    font-size: 3rem;
+    padding: 1rem;
+    color: white;
+}
 .col4 .temp-info .humidity,
 .col4 .temp-info .wind{
     padding: 1rem;
