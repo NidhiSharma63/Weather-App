@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --white-color:rgb(255, 255, 255);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #3faceb;
+  font-family: 'Raleway', sans-serif;
+}
+
+.phone-btns {
+  width: 1rem;
+  position: absolute;
+  top: 3.5rem;
+  left: -0.4rem;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'power-btn' 'volume-up' 'volume-down';
+  gap: 1rem;
+}
+
+.power-btn,
+.volum-up,
+.volume-down {
+  width: 1rem;
+  background: white;
+  border-bottom-left-radius: 0.3rem;
+  border-top-left-radius: 0.3rem;
+}
+
+.power-btn {
+  height: 2rem;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: power-btn;
+}
+
+.volum-up {
+  height: 4rem;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: volume-up;
+  margin-top: 1rem;
+}
+
+.volume-down {
+  height: 4rem;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: volume-down;
+}
+
+.main-wrapper {
+  max-width: 1300px;
+  margin: auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  background-color: white;
+  width: 27%;
+  height: 70%;
+  border-radius: .8rem;
+  position: relative;
+  padding: 1.2rem .8rem;
+  -webkit-box-shadow: 0.1rem 0.1rem 1.1rem 0.1rem #1573aa;
+          box-shadow: 0.1rem 0.1rem 1.1rem 0.1rem #1573aa;
+}
+/*# sourceMappingURL=main.css.map */
